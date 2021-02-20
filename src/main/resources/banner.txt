@@ -1,0 +1,23 @@
+
+${AnsiColor.RED}                                                              bbbbbbbb
+${AnsiColor.RED}                    LLLLLLLLLLL                    iiii       b::::::b
+${AnsiColor.RED}                    L:::::::::L                   i::::i      b::::::b
+${AnsiColor.YELLOW}                    L:::::::::L                    iiii       b::::::b
+${AnsiColor.YELLOW}                    LL:::::::LL                                b:::::b
+${AnsiColor.YELLOW}                      L:::::L                    iiiiiii       b:::::bbbbbbbbb             eeeeeeeeeeee         rrrrr   rrrrrrrrr
+${AnsiColor.GREEN}                      L:::::L                    i:::::i       b::::::::::::::bb         ee::::::::::::ee       r::::rrr:::::::::r
+${AnsiColor.GREEN}                      L:::::L                     i::::i       b::::::::::::::::b       e::::::eeeee:::::ee     r:::::::::::::::::r
+${AnsiColor.GREEN}                      L:::::L                     i::::i       b:::::bbbbb:::::::b     e::::::e     e:::::e     rr::::::rrrrr::::::r
+${AnsiColor.BLUE}                      L:::::L                     i::::i       b:::::b    b::::::b     e:::::::eeeee::::::e      r:::::r     r:::::r
+${AnsiColor.BLUE}                      L:::::L                     i::::i       b:::::b     b:::::b     e:::::::::::::::::e       r:::::r     rrrrrrr
+${AnsiColor.BLUE}                      L:::::L                     i::::i       b:::::b     b:::::b     e::::::eeeeeeeeeee        r:::::r
+${AnsiColor.MAGENTA}                      L:::::L         LLLLLL      i::::i       b:::::b     b:::::b     e:::::::e                 r:::::r
+${AnsiColor.MAGENTA}                    LL:::::::LLLLLLLLL:::::L     i::::::i      b:::::bbbbbb::::::b     e::::::::e                r:::::r
+${AnsiColor.MAGENTA}                    L::::::::::::::::::::::L     i::::::i      b::::::::::::::::b       e::::::::eeeeeeee        r:::::r
+${AnsiColor.YELLOW}                    L::::::::::::::::::::::L     i::::::i      b:::::::::::::::b         ee:::::::::::::e        r:::::r
+${AnsiColor.YELLOW}                    LLLLLLLLLLLLLLLLLLLLLLLL     iiiiiiii      bbbbbbbbbbbbbbbb            eeeeeeeeeeeeee        rrrrrrr
+
+
+
+                                        Dev by Maria Luiza, Vanessa Pessoa, Vinicius Andrade e Wagner Garcia
+
