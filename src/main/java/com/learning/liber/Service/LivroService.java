@@ -1,2 +1,8 @@
-package com.learning.liber.Service;public class LivroService {
+package com.learning.liber.Service;
+
+import com.learning.liber.Model.Livro;
+
+public interface LivroService {
+
+    Livro adicionarLivro(Livro livro);
 }
