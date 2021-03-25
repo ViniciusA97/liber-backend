@@ -38,7 +38,7 @@ public class LivroController {
     }
 
     @PostMapping("/")
-    public  ResponseEntity salvar(@RequestBody LivroDTO dto){
+    public  ResponseEntity salvar(@RequestBody LivroDTO dto) {
         Livro livro = Livro.builder()
                 .titulo(dto.getTitulo())
                 .autor(dto.getAutor())
@@ -54,10 +54,33 @@ public class LivroController {
 
         try {
             Livro new_livro = livroService.adicionarLivro(livro);
-            return  new ResponseEntity(new_livro, HttpStatus.CREATED);
-        }catch (Exception e){
+            return new ResponseEntity(new_livro, HttpStatus.CREATED);
+        } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
+    }
+
+    @PutMapping("edit/{id}")
+    public ResponseEntity<?> updateLivro(@PathVariable(name = "id") long id, @RequestBody LivroDTO dto) {
+        Livro livro = dto.toModel();
+        livro.setId(id);
+
+        Livro response = this.livroService.atualizarLivro(livro);
+
+        if (livro == null) {
+            return new ResponseEntity<>("ID nao encontrado", HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(livro, HttpStatus.OK);
+
+    }
+
+    @DeleteMapping("delete/{id}")
+    public ResponseEntity <?> delete(@PathVariable long id) {
+        return livroRepository.findById(id)
+                .map(record -> {
+                    livroRepository.deleteById(id);
+                    return ResponseEntity.ok().build();
+                }).orElse(ResponseEntity.notFound().build());
     }
 
 }

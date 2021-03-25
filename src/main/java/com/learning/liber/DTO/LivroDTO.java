@@ -1,5 +1,6 @@
 package com.learning.liber.DTO;
 
+import com.learning.liber.Model.Livro;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,4 +25,18 @@ public class LivroDTO {
     private String ano;
     private Integer paginas;
     private String editora;
+
+    public Livro toModel() {
+        return Livro.builder().titulo(this.getTitulo())
+                .id(this.getId())
+                .autor(this.getAutor())
+                .ano(this.getAno())
+                .edicao(this.getEdicao())
+                .path_foto(this.getPath_foto())
+                .ISBN(this.getISBN())
+                .paginas(this.getPaginas())
+                .sinopse(this.getSinopse())
+                .editora(this.getEditora())
+                .genero(this.getGenero()).build();
+    }
 }
