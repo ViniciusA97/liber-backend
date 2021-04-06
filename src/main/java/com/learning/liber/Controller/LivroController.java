@@ -25,9 +25,12 @@ public class LivroController {
     private LivroServiceImpl livroService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> getLivro(@PathVariable(name = "id") int id){
+    public ResponseEntity<?> getLivro(@PathVariable(name = "id") long id){
         log.info("[get teste] ---- id: []", id);
-        Livro livro  = this.livroRepository.getById(id);
+        Livro livro  = this.livroRepository.findById(id).orElse(null);
+        if(livro == null){
+            return ResponseEntity.badRequest().body("");
+        }
         return new ResponseEntity<>(livro, HttpStatus.OK);
     }
 
